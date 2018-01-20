@@ -10,11 +10,14 @@ project/plugins/project/
 .history
 .cache
 .lib/
+target/
 ### Scala
 *.class
 *.log
-*.sbt
 ### Personal
-*/test.sc
+**/test.sc
+
+
+
 
 
