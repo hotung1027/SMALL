@@ -4,7 +4,6 @@ dist/*
 .idea/
 lib_managed/
 src_managed/
-project/
 project/boot/
 project/plugins/project/
 .history
@@ -16,9 +15,3 @@ target/
 *.log
 ### Personal
 **/test.sc
-
-
-
-
-
-!/build.sbt
