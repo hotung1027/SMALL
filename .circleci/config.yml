@@ -58,7 +58,7 @@ jobs:
 
 workflows:
   version: 2
-  build_test_coverage:
+  build-test-coverage:
     jobs:
       - build
       - test:
@@ -66,4 +66,4 @@ workflows:
             - build
       - coverage:
           requires:
-            -test
+            - test
