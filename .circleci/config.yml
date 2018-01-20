@@ -30,7 +30,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: cat /dev/null | sbt test:compile
+      - run: sbt test:compile
 
       - save_cache:
           paths:
@@ -49,7 +49,7 @@ jobs:
             - v1-dependencies--{{ checksum "build.sbt" }}
             - v1-dependencies-
       # run tests!
-      - run: cat /dev/null | sbt clean test
+      - run: sbt clean test
       - save_cache:
           paths:
             - ~/.m2
@@ -66,9 +66,12 @@ jobs:
               - v1-dependencies--{{ checksum "build.sbt" }}
               - v1-dependencies-
         # run coverage
-        - run: cat /dev/null |  sbt clean coverage test
-        - run: cat /dev/null |  sbt coverageReport coverageAggregate
-        - run: cat /dev/null |  sbt codacyCoverage
+        - run: sbt clean coverage test
+        - run: sbt coverageReport coverageAggregate
+        # generate Codacy report
+        - run: sbt codacyCoverage
+        # genereate Codecov report
+        - run: bash <(curl -s https://codecov.io/bash) || echo 'Codecov failed to upload'
         - save_cache:
             paths:
               - ~/.m2
