@@ -1,4 +1,4 @@
-# Scala-MAT *scala written MAT*
+# Scala-Matrix *scala written Matrix*
 experimental,constructing,welcome to contribute
 
 # NMatrix *NumericMatrix*
