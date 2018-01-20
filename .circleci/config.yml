@@ -55,15 +55,15 @@ jobs:
         - run: cat /dev/null |  sbt coverageReport coverageAggregate
         - run: cat /dev/null |  sbt codacyCoverage
 
+
 workflows:
   version: 2
-
   build_test_coverage:
     jobs:
       - build
       - test:
-        requires:
-          - build
+          requires:
+            - build
       - coverage:
-        requires:
-          -test
+          requires:
+            -test
