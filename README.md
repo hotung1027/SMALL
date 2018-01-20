@@ -1,4 +1,7 @@
 # Scala-Matrix *scala written Matrix*
+[![Build status](https://ci.appveyor.com/api/projects/status/6xpene2748pnv812?svg=true)](https://ci.appveyor.com/project/hotung1027/scala-matrix)
+
+
 experimental,constructing,welcome to contribute
 
 # NMatrix *NumericMatrix*
