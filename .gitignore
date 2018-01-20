@@ -1,0 +1,20 @@
+
+### SBT
+dist/*
+.idea/
+lib_managed/
+src_managed/
+project/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+### Scala
+*.class
+*.log
+*.sbt
+### Personal
+*/test.sc
+
+
