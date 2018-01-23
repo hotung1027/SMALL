@@ -1,7 +1,9 @@
-# Scala-Matrix *scala written Matrix*
-[![Build status](https://ci.appveyor.com/api/projects/status/6xpene2748pnv812?svg=true)](https://ci.appveyor.com/project/hotung1027/scala-matrix)
-[![codecov](https://codecov.io/gh/hotung1027/scala-matrix/branch/master/graph/badge.svg)](https://codecov.io/gh/hotung1027/scala-matrix)
-[![CircleCI](https://circleci.com/gh/hotung1027/scala-matrix.svg?style=svg)](https://circleci.com/gh/hotung1027/scala-matrix)
+# Swater *scala written Engine*
+[![Build status](https://ci.appveyor.com/api/projects/status/6xpene2748pnv812?svg=true)](https://ci.appveyor.com/project/hotung1027/Swater)
+[![codecov](https://codecov.io/gh/hotung1027/Swater/branch/master/graph/badge.svg)](https://codecov.io/gh/hotung1027/Swater)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7a9d7d232c67484b8b5b7fcd150d827d)](https://www.codacy.com/app/hotung1027/Swater?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hotung1027/Swater&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/7a9d7d232c67484b8b5b7fcd150d827d)](https://www.codacy.com/app/hotung1027/Swater?utm_source=github.com&utm_medium=referral&utm_content=hotung1027/Swater&utm_campaign=Badge_Coverage)
+[![CircleCI](https://circleci.com/gh/hotung1027/Swater.svg?style=svg)](https://circleci.com/gh/hotung1027/Swater)
 
 
 experimental,constructing,welcome to contribute
