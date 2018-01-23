@@ -56,32 +56,32 @@ class NumberMatrix(override val rowNum:Int,override val colNum:Int,override val 
 		*/
 	def operable(that: NumberMatrix): Boolean = this.colNum == that.rowNum
 	
-	def interact(that: NumberMatrix, f: (Double, Double) => Double, concate: (Double, Double) => Double)(implicit zero: Double): Iterable[Double] =
-		if (operable(that))
-			this.rows
-				.flatMap(row =>
-					that.cols
-						.map(column =>
-							{row zip column}
-								.foldLeft(zero)({ case (sum, (x, y)) => concate(sum, f(x, y)) })))
-		else
-			throw new NoSuchMethodException(s"The Number of Columns of This Matrix" +
-				s" (${this.colNum}) are not equal to Number of Rows of That Matrix (${that.rowNum})")
-	
-	/**
-		* Helper method for Matrix to Matrix Operation
-		* apply functionto both array
-		*/
-	def coOps(that: NumberMatrix, f: (Double, Double) => Double): Iterable[Double] =
-		if (equalSize(that))
-			{this.array zip that.array}
-				.map { case (l, r) => f(l, r) }
-		else
-			throw new NoSuchMethodException(s"The Size of two matrix are not equal " +
-				s"(${this.array.length} != ${that.array.length})")
-	
-	
-	override def scalaOps(that: Double, f: (Double, Double) => Double): Iterable[Double] =		array.map(value => f(value, that))
+	/*	def interact(that: NumberMatrix, f: (Double, Double) => Double, concate: (Double, Double) => Double)(implicit zero: Double): Iterable[Double] =
+			if (operable(that))
+				this.rows
+					.flatMap(row =>
+						that.cols
+							.map(column =>
+								{row zip column}
+									.foldLeft(zero)({ case (sum, (x, y)) => concate(sum, f(x, y)) })))
+			else
+				throw new NoSuchMethodException(s"The Number of Columns of This Matrix" +
+					s" (${this.colNum}) are not equal to Number of Rows of That Matrix (${that.rowNum})")
+		
+		/**
+			* Helper method for Matrix to Matrix Operation
+			* apply functionto both array
+			*/
+		def coOps(that: NumberMatrix, f: (Double, Double) => Double): Iterable[Double] =
+			if (equalSize(that))
+				{this.array zip that.array}
+					.map { case (l, r) => f(l, r) }
+			else
+				throw new NoSuchMethodException(s"The Size of two matrix are not equal " +
+					s"(${this.array.length} != ${that.array.length})")
+		
+		
+		override def scalaOps(that: Double, f: (Double, Double) => Double): Iterable[Double] =		array.map(value => f(value, that))*/
 	//		array.map(value => f(value, that))
 	/**
 		* Matrix to Matrix Operation
