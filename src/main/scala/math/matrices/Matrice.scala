@@ -15,6 +15,12 @@ abstract class Matrice[T](val rowNum:Int, val colNum:Int, val array:Array[T]) ex
 	
 	def constructWith(iter:Iterable[T])(implicit rowNum:Int = this.rowNum,colNum:Int = this.colNum,ctag:ClassTag[T]):Matrice[T]
 	
+	
+	val rows:Array[Vector[T]]
+	
+	val cols:Array[Vector[T]]
+	
+	
 	/**
 		* Helper method for multiplication
 		* for rows and cols apply functions then concate them

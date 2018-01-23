@@ -19,9 +19,9 @@ trait Matrix[T] extends Serializable{
 	*/
 	val array:Array[T]
 	
-	val rows:Array[Vector[T]] = {for{row <- 0 until rowNum} yield array.slice(row * colNum, (row + 1) * colNum).toVector}.toArray
+	val rows:Array[Vector[T]]
 	
-	val cols:Array[Vector[T]] = {for{col <- 0 until colNum} yield rows.flatMap(ls => ls.slice(col, col + 1)).toVector}.toArray
+	val cols:Array[Vector[T]]
 	
 /**
 	* method apply to whole array
