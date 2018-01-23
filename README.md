@@ -1,6 +1,8 @@
 # Scala-Matrix *scala written Matrix*
 [![Build status](https://ci.appveyor.com/api/projects/status/6xpene2748pnv812?svg=true)](https://ci.appveyor.com/project/hotung1027/scala-matrix)
 [![codecov](https://codecov.io/gh/hotung1027/scala-matrix/branch/master/graph/badge.svg)](https://codecov.io/gh/hotung1027/scala-matrix)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2702c33e3525454e94eb28eff4a8d2b1)](https://www.codacy.com/app/hotung1027/scala-matrix?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hotung1027/scala-matrix&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/2702c33e3525454e94eb28eff4a8d2b1)](https://www.codacy.com/app/hotung1027/scala-matrix?utm_source=github.com&utm_medium=referral&utm_content=hotung1027/scala-matrix&utm_campaign=Badge_Coverage)
 [![CircleCI](https://circleci.com/gh/hotung1027/scala-matrix.svg?style=svg)](https://circleci.com/gh/hotung1027/scala-matrix)
 
 
