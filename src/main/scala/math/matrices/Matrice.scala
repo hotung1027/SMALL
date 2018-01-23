@@ -1,8 +1,10 @@
 package math.matrices
 
-abstract class Matrice[T](val rowNum:Int, val colNum:Int, val array:Array[T]) extends Matrix[T] {
+import scala.reflect.ClassTag
+
+abstract class Matrice[T](val rowNum: Int, val colNum: Int, val array: Array[T]) extends Matrix[T] {
 	
-	import scala.reflect.ClassTag
+
 	
 	require(array.length == rowNum * colNum, "The numbers given doesn't match the " +
 		s"size of the matrix! size of numbers: ${array.length}, number of rows * number of columns: ${rowNum * colNum}")
@@ -14,7 +16,6 @@ abstract class Matrice[T](val rowNum:Int, val colNum:Int, val array:Array[T]) ex
 	def operable(that: Matrice[T]): Boolean = this.colNum == that.rowNum
 	
 	def constructWith(iter:Iterable[T])(implicit rowNum:Int = this.rowNum,colNum:Int = this.colNum,ctag:ClassTag[T]):Matrice[T]
-	
 	
 	val rows:Array[Vector[T]]
 	

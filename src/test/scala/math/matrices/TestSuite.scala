@@ -5,6 +5,4 @@ import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class TestSuite extends
-MatrixTest {
-	
-}
+	MatrixTest
